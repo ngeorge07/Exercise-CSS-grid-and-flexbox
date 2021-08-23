@@ -4,17 +4,55 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 2rem;
+}
+
 main {
   font-family: Avenir, Roboto, Helvetica, san-serif;
   font-size: 0.8rem;
-}
-
-article button {
-  background: teal;
 }
 
 .deals {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.sale-item {
+  border: solid 1px;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+article button {
+  background: teal;
+  border: none;
+  border-radius: 1rem;
+  width: auto;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin-top: auto;
+}
+
+article h1 {
+  margin: 1rem 1rem 0.2rem;
+}
+
+article p {
+  margin: 0 1rem 1rem;
+}
+
+article ul {
+  padding-left: 2.5rem;
+  margin-top: 0;
+}
+
+article img {
+  align-self: center;
+  order: -1;
 }
